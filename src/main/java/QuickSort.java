@@ -1,5 +1,6 @@
 import java.util.Arrays;
-import java.util.Random;
+
+import static utils.ArrayUtil.getRandomArray;
 
 /**
  * QuickSort
@@ -15,7 +16,7 @@ public class QuickSort {
         System.out.println("sort array:" + Arrays.toString(r));
     }
 
-    private static void quickSort(Integer left, Integer right, int[] r) {
+    public static void quickSort(Integer left, Integer right, int[] r) {
         if (left >= right)
             return;
         int swap = swap(left, right, r);
@@ -39,13 +40,4 @@ public class QuickSort {
         return right;
     }
 
-    private static int[] getRandomArray(int length) {
-        int[] result = new int[length];
-        Random random = new Random();
-        for (int i = 0; i < length; i++) {
-            result[i] = random.nextInt(100);
-        }
-        System.out.println("random array:" + Arrays.toString(result));
-        return result;
-    }
 }
