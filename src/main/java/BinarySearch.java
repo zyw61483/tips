@@ -3,6 +3,7 @@ import utils.ArrayUtil;
 import java.util.Arrays;
 
 /**
+ * 二分查找 数据必须是有序的
  * BinarySearch
  *
  * @author: zhaoyiwei
